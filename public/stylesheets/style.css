@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #ffff;
+  padding: 10px;
+}
+
+header, footer {
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+.layout-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

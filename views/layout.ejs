@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport', content='width=device-width, initial-scale=1.0'> </meta>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="wrapper">
+        <%- include("./partial/header") %>
+        <div class="layout-sidebar">
+            <side>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/students">Show students</a></li>
+                    <li><a href="/students/create">Add student</a></li>
+                </ul>
+            </side>
+            <div>
+                <%- body %>
+            </div>
+        </div>
+        <%- include("./partial/footer") %>
+    </div>
+  </body>
+</html>
