@@ -11,7 +11,7 @@ module.exports = {
         res.render('students/studentlist', {
             title: "Studentlist",
             students
-        });
+        })
     },
     create: (req, res) => {
         const student = {
@@ -20,9 +20,7 @@ module.exports = {
         }
 
         students.push(student);
-        res.redirect('/', {
-            title: "Studentlist",
-            students})
+        res.redirect("/");
     },
     create_get: (req, res) => {
         res.render('students/studentForm', {title: "Add student"})

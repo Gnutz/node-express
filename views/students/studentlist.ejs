@@ -1,9 +1,12 @@
 
 <h3>Student and grades</h3>
-<% students.forEach(student => { %>
-    <card>
-        <span>
-            <%=student.name %>: <%=student.grade %>
-        </span>
-    </card>
-<% }) %>
+<ul>
+    <% students.forEach(student => { %>
+        <li>
+            <span>
+                <%=student.name %>: <%=student.grade %>
+            </span>
+        </li>
+    <% }) %>
+</ul>
+
